@@ -1,0 +1,33 @@
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(207, 251, 252);
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article{
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside{
+    flex: 1;
+    overflow-y: auto;
+}
+
+header{
+    
+    background-color: rgb(123, 131, 134);
+    
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(123, 131, 134);
+}
+
