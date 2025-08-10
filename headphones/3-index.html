@@ -3,108 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Headphones</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="3-styles.css">
-  <link rel="stylesheet" href="holberton_school-icon/style.css">
+  <title>HEADPHONES</title>
+  <link rel="stylesheet" href="./0-styles.css" >
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- HEADER / HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo_headphones.png" alt="Headphones Logo">
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#what-we-do">What we do</a></li>
-          <li><a href="#our-results">Our results</a></li>
-          <li><a href="#contact-us">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-        <h2>Lorem ipsum dolor set amet lorem ipsum dolor set</h2>
-        <button class="btn">Call to Action</button>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="navbar" >
+        <li class="logo"><a href="#"><img src="./images/logo_headphones.png" alt="logo"></a></li>
+        <input type="checkbox" id="check">
+        <span class="menu">
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Our results</a></li>
+          <li><a href="#">Contact us</a></li>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p class="myP1">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <button type="submit" class="myButton">CALL TO ACTION</button>
+
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in suscipit praesentium assumenda sit dicta rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in suscipit praesentium assumenda sit dicta rem. Eius, maxime sint consequuntur provident quasi sit natus fugiat recusandae omnis dignissimos tempore quisquam?</p>
+    </section>
   </header>
-
-  <!-- WHAT WE DO -->
-  <section id="what-we-do" class="what-we-do">
-    <div class="container">
-      <h2>What we do...</h2>
-      <p class="intro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc augue aliquam turpis, eget luctus sapien justo eget mauris.
+  <main>
+    <section id="What-we-do">
+      <h2>What We Do...</h2>
+      <p class="What-we-do-section">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut quia libero voluptatum et quod reprehenderit minima expedita quos nulla doloremque, ullam architecto amet. Sequi sit hic tempora perspiciatis quas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas maiores impedit non recusandae? Modi ad consequuntur incidunt saepe. Magnam, adipisci nostrum dolores repellat labore ullam cupiditate in cumque fuga ducimus.
       </p>
-      <div class="icons-grid">
-        <div class="icon-box">
-          <span class="holberton_school-icon-ic_sound"></span>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       <div id="icons-container">
+         <div class="service">
+            <img src="./images/wave.png">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+          </div>
+          <div class="service">
+          <img src="./images/movie.png">
+           <h3>Lorem ipsum</h3>
+         <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+       </div>
+       <div class="service">
+          <img src="./images/music.png">
+           <h3>Lorem ipsum</h3>
+         <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+       </div>
+       <div class="service">
+           <img src="./images/ear.png">
+           <h3>Lorem ipsum</h3>
+         <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+       </div>
+  
+       </div>
+    </section>
+    <section id="our-results">
+      <h2>Our results speaks for themselves</h2>
+      <p class="our">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi ipsam optio odit. Fugiat in reiciendis a ab ex nihil iste amet nam quas, dolorem vero! Reprehenderit mollitia praesentium alias?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi ipsam optio odit. Fugiat in reiciendis a ab ex nihil iste amet nam quas, dolorem vero! Reprehenderit mollitia praesentium alias</p>
+
+      <div id="clip-path-container">
+        <div class="clip-path">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
         </div>
-        <div class="icon-box">
-          <span class="holberton_school-icon-ic_video"></span>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="clip-path"> 
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p></div>
+        <div class="clip-path">
+           <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
         </div>
-        <div class="icon-box">
-          <span class="holberton_school-icon-ic_music"></span>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="icon-box">
-          <span class="holberton_school-icon-ic_hearing"></span>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="clip-path">
+           <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- OUR RESULTS -->
-  <section id="our-results" class="our-results">
-    <div class="container">
-      <h2>Our results speak for themselves</h2>
-      <p class="intro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-      </p>
-      <div class="results-grid">
-        <div class="result-item">
-          <img src="images/pentagone.png" alt="Pentagon">
-          <span class="result-number">+2%</span>
-          <p>Performance</p>
-        </div>
-        <div class="result-item">
-          <img src="images/pentagone.png" alt="Pentagon">
-          <span class="result-number">+50%</span>
-          <p>Engagement</p>
-        </div>
-        <div class="result-item">
-          <img src="images/pentagone.png" alt="Pentagon">
-          <span class="result-number">+90%</span>
-          <p>Growth</p>
-        </div>
-        <div class="result-item">
-          <img src="images/pentagone.png" alt="Pentagon">
-          <span class="result-number">+12k</span>
-          <p>Users</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT US -->
-  <section id="contact-us" class="contact-us">
-    <div class="container">
-      <h2>Contact us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit" class="btn">Send</button>
+    </section>
+    <section id="contact">
+       <h2>Contact Us</h2>
+       <div class="form-wrap">
+      <form action="#" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="myname"><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email"><br>
+        <label>Your meassage:</label>
+         <textarea type="text" cols="15" rows="2"></textarea><br><br>
+        <button type="submit" class="myButton">CALL TO ACTION</button>
       </form>
-    </div>
-  </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <footer>
+      <div class="foot-container">
+        <img src="./images/logo_headphones.png">
+      <div class="social-links">
+   <a href="https://github.com/geniuses1264" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://linkedin.com/in/ebenezer-attipoe/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://twitter.com/YourProfile" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+   </div>
+   <p> &copy;Headphones 2025 </p>
+</footer>
+
+  </footer>
+
 </body>
 </html>

@@ -1,0 +1,306 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ header{
+   background: url('./images/Object.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: aliceblue;
+  }
+  .color-block{
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(10, 23, 41) 10%, rgb(10, 20, 34) 100%);
+    height: 50px;
+    
+  }
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+   
+}
+.nav-link{
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+.nav-link, a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link a:hover{
+    text-decoration: underline;
+    text-decoration-color: pink;
+    text-decoration-thickness: 3px;
+    
+}
+
+.hero-info {
+ text-align: center;
+  height: 100vh;
+  margin-top: 5vh;
+}
+ .image-container{
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+ }
+.container{
+     margin-top: 40px;
+     
+}
+ .hero-info h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  
+
+}
+ .container h2{
+    margin-bottom: 30px;
+    font-size: 18px;
+ }
+.info span{
+    padding: 10px 20px;
+    font-weight: bold;}
+.info{
+    margin-top: 20px;
+}
+.hero-info button{
+    padding: 13px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+     margin-top: 35px;
+     background-color: rgb(156, 85, 223);
+     border: none;
+     color: aliceblue;
+     font-family: arial;
+     box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.253);
+     cursor: pointer;
+     
+}
+.hero-info button:hover{
+    background-color: blueviolet;
+}
+
+.image{
+    width: 80px;
+    border-radius: 80%;
+}
+.images{
+    padding: 20px;
+
+}
+.images h3, p{
+    line-height: 1.2;
+    font-size: 12px;
+}
+.span{
+    color: rgb(160, 85, 230);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+    background-color: rgb(154, 81, 221);color: rgb(232, 232, 253);
+
+}
+.section-image{
+    padding: 30px;
+    margin-left: 30px;
+    
+}
+ .text blockquote {
+  padding-bottom: 20px;
+}
+.section .text{
+    font-size: 18px;
+line-height: 1.6;
+margin-right: 30px;
+}
+.tutorials h2{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 25px;
+}
+/*.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+   padding: 10px;
+  text-align: center;
+    width: 80%;
+    border-radius: 12px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+*/
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: nowrap; /* Important: No wrapping */
+  overflow-x: auto; /* Optional: Allows horizontal scroll if needed */
+    
+    font-size: 10px;
+}
+
+.card {
+  flex: 1 1 0; /* grow and shrink */
+  min-width: 0;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* controls max size */
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(222, 90, 226);
+    
+}
+.card .icon{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  max-width: 40;
+  width: 35px;
+}
+
+
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img{
+  width: 30px;
+  margin-right: 15px;
+}
+.review p{
+  margin-left: 20px;
+}
+.review .rate{
+  color: rgb(235, 192, 243);
+}
+.membership{
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: rgb(2, 5, 19);
+  color: aliceblue;
+}
+.membership h2{
+  font-size: 25px;
+}
+.smile-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  font-size: 12px;
+}
+.smile h3 {
+  padding-top: 15px;
+}
+.smile p {
+  padding-top: 15px;
+}
+.membership button{
+    padding: 13px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+     margin-top: 35px;
+     background-color: rgb(156, 85, 223);
+     border: none;
+     color: aliceblue;
+     font-family: arial;
+     box-shadow: 2px 2px 3px 3px rgba(194, 192, 192, 0.116);
+     cursor: pointer;
+     
+}
+.membership button:hover{
+    background-color: blueviolet;
+}
+.sub-layout{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80vw;
+}
+.faq{
+  margin-top: 20px;
+
+}
+.faq h2{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sub-layout h3{
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.sub-layout div{
+ 
+  font-size: 12px;
+}
+
+.layout{
+  padding: 30px;
+
+}
+
+/* footer styling*/
+.footer {
+  background-color: rgb(4, 2, 31);
+   color: aliceblue;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+ 
+}
+ .footer p{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 12px;
+ }

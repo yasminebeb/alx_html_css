@@ -1,15 +1,16 @@
-# Headphones Project
+# Headphones Landing Page 🎧
 
-This project is a simple responsive landing page for a fictional headphone brand, based on a Figma design provided by ALX.
+A responsive, multi-section landing page for a headphones brand.  
+Built using **HTML5** and **CSS3**, with icons powered by **Font Awesome**.
 
-## 📐 Design Overview
+## Features ✨
 
-The layout and design follow the original Figma file. It supports both desktop and mobile versions. The content is centered with a max width of 1000px.
+- **Navigation Bar** with hamburger menu for mobile view.
+- **Hero Section** with call-to-action button.
+- **"What We Do" Section** showcasing services with custom icons.
+- **"Our Results" Section** with visually engaging clip-path shapes.
+- **Contact Form** for user inquiries.
+- Fully responsive design for desktop and mobile devices.
 
-- ✅ Mobile view triggered at screen width **≤ 480px**
-- ✅ Link hover/active color: **#FF6565**
-- ✅ Button hover/active: **opacity 0.9**
-- ✅ Font used: Source Sans Pro and Spin-Cycle-OT (you may need to install manually)
-
-## 📁 Folder Structure
+## Project Structure 📂
 
