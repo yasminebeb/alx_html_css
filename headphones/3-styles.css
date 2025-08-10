@@ -1,0 +1,47 @@
+/* Import everything from Task 3 first */
+@import url("2-styles.css");
+
+/* CONTACT US SECTION */
+.contact-us {
+  background-color: #fff;
+  color: #000;
+  padding: 4rem 0;
+  text-align: center;
+}
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-us form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-us input,
+.contact-us textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-us input:focus,
+.contact-us textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+.contact-us .btn {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.contact-us .btn:hover {
+  opacity: 0.9;
+}

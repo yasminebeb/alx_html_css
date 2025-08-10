@@ -1,0 +1,37 @@
+/* === Animations for "What we do..." icons === */
+@keyframes bounceUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.icons-grid .icon-box {
+  animation: bounceUpDown 3s ease-in-out infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.icons-grid .icon-box:hover {
+  animation-play-state: paused;
+  transform: scale(1.15) rotate(10deg);
+  opacity: 0.9;
+}
+
+/* === Animations for "Our results" items === */
+@keyframes slowRotateScale {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1) rotate(15deg);
+    opacity: 0.85;
+  }
+}
+.results-grid .result-item {
+  animation: slowRotateScale 5s ease-in-out infinite;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.results-grid .result-item:hover {
+  animation-play-state: paused;
+  transform: scale(1.25) rotate(-15deg);
+  opacity: 1;
+}

@@ -1,0 +1,117 @@
+/* ----- RESET & VARIABLES from previous task ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff6565;
+  --text-light: #fff;
+  --max-width: 1100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: var(--text-light);
+}
+
+/* ----- HERO SECTION (unchanged) ----- */
+.hero {
+  background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.logo img {
+  width: 150px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: var(--primary-color);
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ----- WHAT WE DO SECTION ----- */
+.what-we-do {
+  background-color: #fff;
+  color: #000;
+  padding: 4rem 0;
+  text-align: center;
+}
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.what-we-do .intro {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #555;
+}
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.icon-box {
+  padding: 1rem;
+}
+.icon-box span {
+  font-size: 3rem;
+  color: var(--primary-color);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.icon-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.icon-box p {
+  font-size: 0.9rem;
+  color: #555;
+}

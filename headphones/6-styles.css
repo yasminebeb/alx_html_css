@@ -1,0 +1,149 @@
+/* ---------- RESET & VARIABLES (kept simple & reusable) ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root{
+  --primary-color: #ff6565;
+  --text-light: #fff;
+  --max-width: 1100px;
+  --bg-dark: #000;
+  --muted: #ccc;
+}
+
+/* ---------- Base layout (hero / container / nav / btn) ---------- */
+/* These rules match previous tasks; unchanged behaviour for the rest of the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.logo img { width: 150px; }
+.nav ul { list-style: none; display:flex; justify-content:center; gap:2rem; margin:1rem 0; }
+.nav a { color: var(--text-light); text-decoration:none; font-weight:bold; }
+.nav a:hover { color: var(--primary-color); }
+.hero-content h1 { font-size: 2.5rem; margin-bottom:1rem; }
+.hero-content h2 { font-size:1.2rem; font-weight:300; margin-bottom:2rem; }
+.btn { padding:0.7rem 1.5rem; background:var(--primary-color); color:var(--text-light); border:none; border-radius:5px; cursor:pointer; }
+
+/* What we do */
+.what-we-do{ background-color:#fff; color:#000; padding:4rem 0; text-align:center; }
+.what-we-do h2 { font-size:2rem; margin-bottom:1rem; }
+.what-we-do .intro { max-width:700px; margin:0 auto 3rem; font-size:1rem; color:#555; }
+.icons-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:2rem; }
+.icon-box span { font-size:3rem; color:var(--primary-color); display:inline-block; margin-bottom:1rem; }
+.icon-box h3 { font-size:1.2rem; margin-bottom:0.5rem; }
+.icon-box p { font-size:0.9rem; color:#555; }
+
+/* ---------- OUR RESULTS (TASK 6) ---------- */
+.our-results {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 4rem 0;
+  text-align: center;
+}
+.our-results h2 { font-size: 2rem; margin-bottom: 1rem; }
+.our-results .intro { max-width: 700px; margin: 0 auto 2.5rem; font-size: 1rem; color: var(--muted); }
+
+/* Grid for results */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Each result item wrapper */
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ---------- CSS PENTAGON (no image) ---------- */
+/* The pentagon is drawn with clip-path. Background, border, and inner number centered. */
+.pentagon {
+  width: 140px;
+  height: 140px;
+  /* Main fill color */
+  background: linear-gradient(180deg, #222 0%, #111 100%);
+  /* Add subtle border-like effect using box-shadow */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.6), inset 0 -4px 10px rgba(255,255,255,0.02);
+  /* clip-path draws a regular-ish pentagon */
+  -webkit-clip-path: polygon(50% 0%, 95% 35%, 78% 100%, 22% 100%, 5% 35%);
+  clip-path: polygon(50% 0%, 95% 35%, 78% 100%, 22% 100%, 5% 35%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* smaller variant if needed */
+.pentagon--small { width: 120px; height: 120px; }
+
+/* The stat number centered inside pentagon */
+.result-number {
+  position: absolute;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-light);
+  z-index: 2;
+  pointer-events: none;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Add a subtle ring/outline using pseudo element for contrast */
+.pentagon::after {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 6px;
+  -webkit-clip-path: inherit;
+  clip-path: inherit;
+  background: transparent;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.03);
+  pointer-events: none;
+}
+
+/* Label below pentagon */
+.result-item p { color: var(--text-light); margin-top: 0.25rem; font-size: 0.95rem; }
+
+/* ---------- CONTACT, FOOTER (copied styling basics) ---------- */
+.contact-us { background-color: #fff; color: #000; padding: 4rem 0; text-align:center; }
+.contact-us h2 { font-size: 2rem; margin-bottom: 1rem; }
+.contact-us form { max-width: 500px; margin: 0 auto; display:flex; flex-direction:column; gap:1rem; }
+.contact-us input, .contact-us textarea { padding:0.8rem; font-size:1rem; border:1px solid #ccc; border-radius:5px; resize:none; }
+.contact-us input:focus, .contact-us textarea:focus { outline:none; border-color:var(--primary-color); box-shadow:0 0 5px var(--primary-color); }
+.contact-us .btn { background-color: var(--primary-color); color: var(--text-light); border:none; cursor:pointer; padding:0.8rem; font-size:1rem; border-radius:5px; }
+.footer { background-color: #000; color: #fff; padding: 2rem 0; text-align:center; }
+.footer-content { display:flex; flex-direction:column; align-items:center; gap:1rem; }
+.footer-logo img { max-height:40px; }
+.footer-socials { display:flex; gap:1rem; }
+.footer-copy { font-size:0.9rem; color: #ccc; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (min-width: 768px) {
+  .footer-content { flex-direction: row; justify-content: space-between; align-items:center; }
+  .pentagon { width: 150px; height: 150px; }
+  .pentagon--small { width: 140px; height: 140px; }
+  .result-number { font-size: 1.5rem; }
+}
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 1.75rem; }
+  .pentagon { width: 110px; height: 110px; }
+  .pentagon--small { width: 100px; height: 100px; }
+  .result-number { font-size: 1rem; }
+}
